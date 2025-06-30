@@ -10,6 +10,18 @@ public class App {
 
   public static void main(String[] args) {
     System.out.println(new App().getGreeting());
+    System.err.println(
+        "Sum of 2 and 3 is " + new Calculate().sum(2, 3) + "." + "Average is " + new Calculate().average(2, 3) + ".");
+    System.err.println(
+        "Sum of 1 to 10 is " + new Calculate().sumSequence(1, 10) + "." + "Average is " + new Calculate().average(1, 10)
+            + ".");
+    System.err.println(
+        "Sum of odd of 1 to 10 is " + new Calculate().sumOdd(1, 10) + ".");
+    System.err.println(
+        "Sum of even of 1 to 10 is " + new Calculate().sumEven(1, 10) + ".");
+
+    System.err.println(
+        new Calculate().sumOdd(4, 10) + ".");
   }
 
 }
